@@ -1,0 +1,37 @@
+*{
+  border: 1px  solid  red;
+  margin: 10px;
+
+}
+
+header{
+  background: blue;
+}
+
+section{
+  background: purple;
+}
+
+ article h3{
+  color: green;
+}
+
+.guitarra1{
+  background: yellow;
+}
+
+.guitarra2{
+  background: salmon;
+}
+
+#header{
+  border: 3px solid white;
+}
+
+#guitarras{
+  border: 3px solid orange;
+}
+
+#portada{
+  border: 3px solid brown;
+}
