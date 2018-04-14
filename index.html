@@ -8,11 +8,13 @@
     <link href="https://fonts.googleapis.com/css?family=Allerta|Gaegu" rel="stylesheet">
   </head>
   <body>
+    <!-- portada -->
+    <section id="portada">
     <!--  header -->
     <header id="header" class="contenedor">
       <!-- logotipo -->
       <figure class="logotipo">
-         <img src="images/invie.png" width="186" height="60" alt="Invie Logotipo">
+        <img src="images/invie.png" width="186" height="60" alt="Invie Logotipo">
       </figure>
       <!-- menu -->
       <nav class="menu">
@@ -24,22 +26,20 @@
             <a href="#guitarras">Guitarras</a>
           </li>
           <li>
-            <a href="/precios.html">Precios</a>
+            <a href="precios/precios.html">Precios</a>
           </li>
         </ul>
       </nav>
     </header>
-    <!-- portada -->
-    <section id="portada">
       <div class="contenedor">
         <!-- titulo -->
-        <h1 class="titulo">Guitarras Invisibles</h1>
+        <h1 class="titulo">Guitarras <span>Invi</span>sibles</h1>
         <!-- resumen -->
         <h3 class="resumen">Sé la estrella de rock que siempre quisiste ser</h3>
         <!-- boton -->
-        <button type="button" name="button">Conoce Más</button>
+        <a class="boton" href="precios/precios.html">Conoce más</a>
+        </div>
       </section>
-      </div>
     <!--guitarras -->
     <section id="guitarras" class="contenedor">
       <!-- titulo -->
@@ -58,7 +58,7 @@
       </article>
       <!-- guitarra 2 -->
       <article class="guitarra" class="contenedor">
-        <img class="izquierda" src="images/invie-classic.png" width="350" height="350" alt="Guitarra Invie Clasica">
+        <img class="izquierda" src="images/invie-classic.png" width="300" height="300" alt="Guitarra Invie Clasica">
         <div class="contenedor_guitarra_izquierdo">
           <h3 class="invie-classic">Invie Classic</h3>
             <ol>
@@ -69,5 +69,49 @@
           </div>
       </article>
     </section>
+    <footer class="footer">
+      <div class="contenedor">
+        <div class="contacto">
+          <img src="images/invie-white.png" alt="logotipo-blanco">
+          <a href="tel:+573185274636"> <strong> Télefono: </strong><span> 3185274636 </span></a>
+          <a href="mailto:srjpbot@gmail.com"> <strong> E-mail: </strong><span> srjpbot@gmail.com </span></a>
+        </div>
+        <form class="formulario" action="index.html" method="post">
+          <div class="columna1">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" type="text" name="nombre" value="" placeholder="Digita tú nombre"><br>
+            <label for="email">Correo électronico</label>
+            <input id="email" type="email" name="email" value="" placeholder="Digita tú correo électronico">
+            <div class="sexo">
+              <label for="mujer">
+                <input id="mujer" type="radio" name="sexo" value="mujer" checked>Mujer
+              </label>
+              <label for="hombre">
+                <input id="hombre" type="radio" name="sexo" value="hombre">Hombre
+              </label>
+            </div>
+            <div class="intereses">
+              <label for="cotizacion">
+                <input id="cotizacion" type="checkbox" name="intereses" value="cotizacion" checked>Cotización
+              </label>
+              <label for="reclamos">
+                <input id="reclamos" type="checkbox" name="reclamos" value="reclamos">Reclamos
+              </label>
+              <label for="comentarios">
+                <input id="comentarios" type="checkbox" name="intereses" value="comentarios">Comentarios
+              </label>
+              <label for="otros">
+                <input id="otros" type="checkbox" name="intereses" value="otros">Otros
+              </label>
+            </div>
+          </div>
+          <div class="columna2">
+            <label for="asunto"> Asunto </label>
+            <textarea id="asunto" name="asunto" rows="5" cols="50"></textarea><br>
+            <input  class="boton" type="submit" name="" value="Enviar">
+          </div>
+        </form>
+      </div>
+    </footer>
   </body>
 </html>

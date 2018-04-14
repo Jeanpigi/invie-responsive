@@ -5,10 +5,41 @@ body{
 header{
   position: relative;
 }
+table{
+  width: 100%;
+}
+th{
+  background: #273b47;
+  color: white;
+  padding: 10px 20px;
+  text-align: left;
+}
+
+td{
+  padding: 20px;
+}
+table, th, td{
+  border: 1px solid #273b47;
+  border-collapse: collapse;
+}
+.boton{
+  border-radius: 12px;
+  border: none;
+  background: #fd324e;
+  color: white;
+  padding: 7px 12px;
+  font-size: 18px;
+  background: linear-gradient(to left, #fe344e, #ff7250);
+  cursor: pointer;
+  text-decoration: none;
+}
 .titulo{
   font-size: 70px;
   margin-top: 50px;
   margin-bottom: 15px;
+}
+.titulo span{
+  text-decoration: underline;
 }
 .resumen{
   font-size: 24px;
@@ -41,8 +72,21 @@ header{
   margin-left: 30px;
 }
 
+.menu li:before{
+  content: '▸';
+  font-size: 50px;
+  line-height: 20px;
+  color: blue;
+}
+
+.menu a{
+  color: white;
+  text-decoration: none;
+}
+
 .logotipo{
   display: inline-block;
+  margin: auto;
 }
 
 .contenedor{
@@ -55,6 +99,8 @@ header{
 }
 .contenedor_guitarra_izquierdo{
   margin-left: 370px;
+  position: relative;
+  bottom: 90px;
 }
 .derecha{
   float: right;
@@ -64,13 +110,12 @@ header{
 .izquierda{
   float: left;
   position: relative;
-  top: 60px;
+  top: 40px;
 }
 
 .guitarra{
   margin: 10px;
   padding: 10px;
-  /*overflow: hidden;*/
   border: 1px solid black;
   border-radius: 10px;
 }
@@ -79,12 +124,74 @@ header{
   padding: 0;
 }
 
+.footer{
+  background: #273b47;
+}
+
+.footer .contenedor{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacto{
+  display: flex;
+  width: 300px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.contacto img{
+  display: block;
+}
+.contacto strong{
+  display: block;
+}
+
+.contacto a{
+  color: white;
+  text-decoration: none;
+  margin: 10px 10px 10px 0;
+}
+
+.formulario{
+  display: flex;
+  width: 500px;
+  color: white;
+  padding: 50px 10px;
+}
+
+.formulario label, sexo, .intereses{
+  padding: 2px;
+}
+
+.columna1, .columna2{
+  display: flex;
+  flex-direction: column;
+}
+
+.columna1{
+  margin-right: 15px;
+}
+.columna2{
+  align-items: flex-start;
+}
+
+.intereses label{
+  font-size: 10px;
+}
+
+.sexo{
+  margin-top: 10px;
+}
+
 #portada{
   background-image: url("../images/background.png");
+  background-size: cover;
   color: white;
-  padding: 20px;
+  padding: 50px;
+  height: 300px;
 }
-#portada button{
+#portada boton{
   margin-bottom: 50px;
 }
 
