@@ -33,17 +33,26 @@ table, th, td{
   cursor: pointer;
   text-decoration: none;
 }
+
 .titulo{
   font-size: 70px;
   margin-top: 50px;
   margin-bottom: 15px;
+  opacity: 1;
+}
+.titulo:hover {
+  opacity: 2;
+  color: skyblue;
 }
 .titulo span{
   text-decoration: underline;
 }
 .resumen{
-  font-size: 24px;
+  font-size: 18px;
   margin-top: 0;
+}
+.resumen:hover{
+  transform: scale(2);
 }
 .titulo2{
   font-size: 60px;
@@ -87,6 +96,11 @@ table, th, td{
 .logotipo{
   display: inline-block;
   margin: auto;
+  transition: .2s;
+}
+
+.logotipo:hover{
+  transform: translateX(20px);
 }
 
 .contenedor{
@@ -106,11 +120,19 @@ table, th, td{
   float: right;
   position: relative;
   top: -127px;
+  transition: .2s;
+}
+.derecha:hover{
+  transform: translateY(-20px);
 }
 .izquierda{
   float: left;
   position: relative;
   top: 40px;
+  transition: .3s;
+}
+.izquierda:hover{
+  transform: rotate(45deg);
 }
 
 .guitarra{
