@@ -1,12 +1,7 @@
-My Web Site
+Doctorado Web
 ==========
 
-Este es el README de mi desarrollo web al cual estoy practicando conocimientos que he aprendido en Platzi.
+Este es el README de mi desarrollo de una Página web para el Doctorado de la Universidad de la Amazonia.
 
-Blablablablabla
+
 --------------------
-
-Así se crean secciones y subsecciones. Para crear una enumeración utilizamos:
-+ Elemento 1
-+ Elemento 2
-+ Elemento 3

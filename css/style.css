@@ -51,9 +51,7 @@ table, th, td{
   font-size: 18px;
   margin-top: 0;
 }
-.resumen:hover{
-  transform: scale(2);
-}
+
 .titulo2{
   font-size: 60px;
   font-family: 'Allerta', sans-serif;
@@ -104,8 +102,11 @@ table, th, td{
 }
 
 .contenedor{
-  width: 800px;
+  max-width: 800px;
   margin: auto;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .contenedor_guitarra_derecho{
@@ -148,6 +149,8 @@ table, th, td{
 
 .footer{
   background: #273b47;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .footer .contenedor{
@@ -219,4 +222,55 @@ table, th, td{
 
 #guitarras{
   color: #1F313C;
+}
+
+/*Aqui estamos creando la segunda forma de crear media querie*/
+
+@media screen and (max-width:800px) {
+/*trabajando con la portada del sitio*/
+  .titulo{
+    font-size: 45px;
+    margin-top: 30px;
+  }
+
+  .resumen{
+    font-size: 18px;
+  }
+
+  #portada{
+    height: auto;
+  }
+
+  #portada .boton{
+    margin-bottom: 30px;
+    display: inline-block;
+  }
+
+  /*Los elementos de guitarras*/
+
+  #guitarras{
+    text-align: center;
+  }
+  .izquierda, .derecha{
+    float: none;
+    position: static;
+  }
+
+  .invie-acustica{
+    margin: 0;
+  }
+
+  .guitarra{
+    height: auto;
+  }
+
+  .guitarra li {
+    list-style: none;
+  }
+
+  .contenedor_guitarra_izquierdo{
+    position: static;
+    margin: 0;
+  }
+
 }
