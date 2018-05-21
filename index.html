@@ -8,7 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=Allerta|Gaegu" rel="stylesheet">
     <!-- esta es una forma de crear un Media query -->
     <!--  <link rel="stylesheet" media="(max-width:800px)" href="css/media-querie.css"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalabel=no">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalabel=no"> -->
+
   </head>
   <body>
     <!-- portada -->
@@ -48,9 +49,11 @@
     <section id="guitarras" class="contenedor">
       <!-- titulo -->
       <h2 class="titulo2">Nuestras Guitarras</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/aelpYjJBrV8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <video src="video/320x240.ogg"></video>
       <!-- guitarra 1 -->
       <article class="guitarra">
-        <img class="derecha" src="images/invie-acustica.png" width="350" height="350" alt=" Guitarra Invie Acústica">
+        <img class="derecha" data-src="images/invie-acustica.png" width="350" height="350" alt=" Guitarra Invie Acústica">
         <div class="contenedor_guitarra_derecho">
           <h3 class="invie-acustica">Invie Acústica</h3>
           <ol>
@@ -62,7 +65,7 @@
       </article>
       <!-- guitarra 2 -->
       <article class="guitarra">
-        <img class="izquierda" src="images/invie-classic.png" width="300" height="300" alt="Guitarra Invie Clasica">
+        <img class="izquierda" data-src="images/invie-classic.png" width="300" height="300" alt="Guitarra Invie Clasica">
         <div class="contenedor_guitarra_izquierdo">
           <h3 class="invie-classic">Invie Classic</h3>
             <ol>
@@ -76,7 +79,7 @@
     <footer class="footer">
       <div class="contenedor">
         <div class="contacto">
-          <img src="images/invie-white.png" alt="logotipo-blanco">
+          <img data-src="images/invie-white.png" alt="logotipo-blanco">
           <a href="tel:+573185274636"> <strong> Télefono: </strong><span> 3185274636 </span></a>
           <a href="mailto:srjpbot@gmail.com"> <strong> E-mail: </strong><span> srjpbot@gmail.com </span></a>
         </div>
@@ -117,6 +120,7 @@
         </form>
       </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
     <script type="text/javascript" src="script/script.js"></script>
   </body>
 </html>
