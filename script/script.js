@@ -1,21 +1,45 @@
-let $burguerButton = document.getElementById('burguer-button');
-let $menu = document.getElementById('menu');
-let consulta = window.matchMedia("(max-width: 500px)")
+let consulta = window.matchMedia('(max-width: 500px)');
 consulta.addListener(mediaQuery);
 
-const toggleMenu = () => $menu.classList.toggle('active')
+let $burguerButton = document.getElementById('burguer-button');
+let $menu = document.getElementById('menu');
+function toggleMenu(){
+  $menu.classList.toggle('active')
+};
+function showMenu(){
+  $menu.classList.add('active')
+};
+
+function hideMenu(){
+  $menu.classList.remove('active')
+};
 
 function mediaQuery() {
   if (consulta.matches) {
-    console.log("se cumplio la condicción");
+    // si se cumple hagamos esto
+    console.log('se cumplió la condicion');
     $burguerButton.addEventListener('touchstart', toggleMenu);
-
   } else {
-    console.log("no se cumplio la condicción");
     $burguerButton.removeEventListener('touchstart', toggleMenu);
+    // si no se cumple hagamos esto
+    console.log('no se cumplió la condicion');
   }
 }
+mediaQuery();
 
-var bLazy = new Blazy({
-  selector:'img'
+// lazy loading
+let bLazy = new Blazy({
+    selector: 'img'
 });
+// $burguerButton.addEventListener('touchstart', toggleMenu);
+
+// function toggleMenu(){
+//   $menu.classList.toggle('active')
+// };
+// gestos touch
+let $body = document.body;
+
+let gestos = new Hammer($body);
+
+gestos.on('swipeleft', hideMenu);
+gestos.on('swiperight', showMenu);
